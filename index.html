@@ -83,16 +83,19 @@ a:hover img {
 
     /* IMAGE 1: FULL-WIDTH TOP BANNER */
     .hero {
-      width: 100%;
-      overflow: hidden;
-    }
+  width: 100%;
+  display: block;
+  overflow: visible;
+  background: #ffffff;
+}
 
     .hero img {
-      width: 100%;
-      height: auto;
-      max-height: 620px;
-      object-fit: cover;
-    }
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
+}
 
     /* MAIN CONTENT WIDTH */
     .section {
@@ -125,17 +128,19 @@ a:hover img {
 
     /* IMAGE 5: FULL-WIDTH BANNER */
     .wide-banner {
-      width: 100%;
-      overflow: hidden;
-      margin: 10px 0;
-    }
+  width: 100%;
+  display: block;
+  overflow: visible;
+  background: #ffffff;
+}
 
-    .wide-banner img {
-      width: 100%;
-      height: auto;
-      max-height: 520px;
-      object-fit: cover;
-    }
+.wide-banner img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
+}
 
     /* IMAGES 6, 7: TWO ACROSS */
     .two-across {
