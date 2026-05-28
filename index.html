@@ -1,6 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JACKPWN Featured Finds</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>Buffalo Remixed</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111111;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      background: #ffffff;
+    }
+
+    /* IMAGE 1: FULL-WIDTH TOP BANNER */
+    .hero {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 620px;
+      object-fit: cover;
+    }
+
+    /* MAIN CONTENT WIDTH */
+    .section {
+      width: 100%;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 36px 24px;
+    }
+
+    /* IMAGES 2, 3, 4: THREE ACROSS */
+    .three-across {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .product-tile {
+      width: 100%;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .product-tile img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      background: #ffffff;
+    }
+
+    /* IMAGE 5: FULL-WIDTH BANNER */
+    .wide-banner {
+      width: 100%;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .wide-banner img {
+      width: 100%;
+      height: auto;
+      max-height: 520px;
+      object-fit: cover;
+    }
+
+    /* IMAGES 6, 7: TWO ACROSS */
+    .two-across {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 42px;
+      align-items: center;
+    }
+
+    .hoodie-tile img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      background: #ffffff;
+    }
+
+    /* IMAGE 8: BIG CENTERED CAMO HAT */
+    .featured-hat-section {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 24px 70px;
+      text-align: center;
+    }
+
+    .featured-hat-section img {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      object-fit: contain;
+      background: #ffffff;
+    }
+
+    .variant-text {
+      margin-top: 18px;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      color: #111111;
+    }
+
+    /* SIMPLE HOVER EFFECT */
+    a img {
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    a:hover img {
+      transform: scale(1.015);
+      opacity: 0.96;
+    }
+
+    /* MOBILE LAYOUT */
+    @media (max-width: 850px) {
+      .section {
+        padding: 24px 16px;
+      }
+
+      .three-across {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .two-across {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .hero img {
+        max-height: none;
+      }
+
+      .wide-banner img {
+        max-height: none;
+      }
+
+      .variant-text {
+        font-size: 22px;
+      }
+    }
+  </style>
 </head>
+
+<body>
+
+  <main class="page">
+
+    <!-- IMAGE 1: FULL TOP BANNER, CLICKABLE -->
+    <a class="hero" href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/image1.jpg" alt="Buffalo Remixed game day gear banner" />
+    </a>
+
+    <!-- IMAGES 2, 3, 4: THREE RECTANGLES, NO BORDER, EVENLY SPACED -->
+    <section class="section">
+      <div class="three-across">
+
+        <a class="product-tile" href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/image2.jpg" alt="Navy custom hat" />
+        </a>
+
+        <a class="product-tile" href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/image3.jpg" alt="Red custom shirt" />
+        </a>
+
+        <a class="product-tile" href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/image4.jpg" alt="White custom shirt" />
+        </a>
+
+      </div>
+    </section>
+
+    <!-- IMAGE 5: FULL-WIDTH CLICKABLE BANNER -->
+    <a class="wide-banner" href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/image5.jpg" alt="Ice Age Collection banner" />
+    </a>
+
+    <!-- IMAGES 6 AND 7: TWO RECTANGLES, EVENLY SPACED -->
+    <section class="section">
+      <div class="two-across">
+
+        <a class="hoodie-tile" href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/image6.jpg" alt="Navy Buffalo hoodie" />
+        </a>
+
+        <a class="hoodie-tile" href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/image7.jpg" alt="Royal blue Buffalo hoodie" />
+        </a>
+
+      </div>
+    </section>
+
+    <!-- IMAGE 8: BIGGER CENTERED CAMO HAT WITH TEXT -->
+    <section class="featured-hat-section">
+      <a href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">
+        <img src="images/image8.jpg" alt="Camo custom hat" />
+        <div class="variant-text">Multiple variants available</div>
+      </a>
+    </section>
+
+  </main>
+
+</body>
+</html>
