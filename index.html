@@ -139,39 +139,52 @@
 
     /* IMAGE 8: BIG CENTERED CAMO HAT */
     .featured-hat-section {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 24px 70px;
-      text-align: center;
-    }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px 50px;
+  text-align: center;
+  overflow: hidden;
+}
 
-    .featured-hat-section img {
-      width: 100%;
-      max-width: 650px;
-      margin: 0 auto;
-      object-fit: contain;
-      background: #ffffff;
-    }
+.featured-hat-section a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.featured-hat-section img {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  object-fit: contain;
+  background: #ffffff;
+}
 
     .variant-text {
-  margin-top: 18px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 18px auto 0;
+  padding: 0 24px;
+  display: block;
+  text-align: center;
   font-family: "Uni Sans", "Arial Black", Arial, Helvetica, sans-serif;
-  font-size: clamp(16px, 2vw, 26px);
+  font-size: clamp(14px, 1.45vw, 22px);
   font-weight: 900;
-  letter-spacing: 0.6px;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
   color: #003DA5;
   text-transform: uppercase;
   white-space: nowrap;
-  text-align: center;
-    }
+  overflow: hidden;
+}
 
     @media (max-width: 600px) {
   .variant-text {
     white-space: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.35;
-    padding: 0 12px;
+    padding: 0 16px;
   }
 }
 
