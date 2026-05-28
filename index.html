@@ -22,11 +22,14 @@
       color: #111111;
     }
 
-    a {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-    }
+   a {
+  cursor: pointer;
+}
+
+a:hover img {
+  transform: scale(1.012);
+  filter: brightness(0.97);
+}
 
     img {
       display: block;
@@ -51,6 +54,16 @@
   color: #c8102e;
     }
 
+    .site-header-subtext {
+  margin: 6px 0 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #003DA5;
+  text-align: center;
+}
+    
 .site-footer {
   width: 100%;
   padding: 26px 20px 34px;
@@ -61,11 +74,12 @@
 .site-footer-text {
   margin: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
   color: #c8102e;
-    }
+}
+
     /* IMAGE 1: FULL-WIDTH TOP BANNER */
     .hero {
       width: 100%;
@@ -162,23 +176,16 @@
 }
 
     .variant-text {
-  width: 100%;
-  max-width: 1100px;
-  margin: 18px auto 0;
-  padding: 0 24px;
-  display: block;
-  text-align: center;
-  font-family: "Uni Sans", "Arial Black", Arial, Helvetica, sans-serif;
-  font-size: clamp(14px, 1.45vw, 22px);
-  font-weight: 900;
-  line-height: 1.25;
-  letter-spacing: 0.5px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: clamp(13px, 1.2vw, 18px);
+  font-weight: 800;
+  letter-spacing: 0.4px;
   color: #003DA5;
   text-transform: uppercase;
+  text-align: center;
   white-space: nowrap;
-  overflow: hidden;
 }
-
+    
     @media (max-width: 600px) {
   .variant-text {
     white-space: normal;
@@ -235,11 +242,12 @@
 
     <header class="site-header">
   <p class="site-header-text">Limited-run fan-inspired apparel</p>
-    </header>
+  <p class="site-header-subtext">Limited-run fan-inspired apparel and accessories, available through Spock Shop on eBay.</p>
+</header>
     
     <!-- IMAGE 1: FULL TOP BANNER, CLICKABLE -->
     <a class="hero" href="https://www.ebay.com/itm/358572032914" target="_blank" rel="noopener noreferrer">
-      <img src="images/image1.jpg" alt="Shop Buffalo Game Day Gear" />
+      <img src="images/image1.jpg" alt="alt="Shop the Buffalo Remixed game day gear collection on eBay" />
     </a>
 
     <!-- IMAGES 2, 3, 4: THREE RECTANGLES, NO BORDER, EVENLY SPACED -->
@@ -247,15 +255,15 @@
       <div class="three-across">
 
         <a class="product-tile" href="https://www.ebay.com/itm/358580955240" target="_blank" rel="noopener noreferrer">
-          <img src="images/image2.jpg" alt="Navy Charge Logo Hat" />
+          <img src="images/image2.jpg" alt="Shop the navy fan-inspired hat on eBay" />
         </a>
 
         <a class="product-tile" href="https://www.ebay.com/itm/358572032914" target="_blank" rel="noopener noreferrer">
-          <img src="images/image3.jpg" alt="Red No Charge Logo T-Shirt" />
+          <img src="images/image3.jpg" alt="Shop the red fan-inspired T-shirt on eBay" />
         </a>
 
         <a class="product-tile" href="https://www.ebay.com/itm/358571638092" target="_blank" rel="noopener noreferrer">
-          <img src="images/image4.jpg" alt="White No Charge Small Logo T-Shirt" />
+          <img src="images/image4.jpg" alt="Shop the white fan-inspired T-shirt on eBay" />
         </a>
 
       </div>
@@ -263,7 +271,7 @@
 
     <!-- IMAGE 5: FULL-WIDTH CLICKABLE BANNER -->
     <a class="wide-banner" href="https://www.ebay.com/itm/358571892024" target="_blank" rel="noopener noreferrer">
-      <img src="images/image5.jpg" alt="Shop the Ice Age Collection" />
+      <img src="images/image5.jpg" alt="Shop the Ice Age Collection hoodies and cold-weather gear on eBay" />
     </a>
 
     <!-- IMAGES 6 AND 7: TWO RECTANGLES, EVENLY SPACED -->
@@ -271,11 +279,11 @@
       <div class="two-across">
 
         <a class="hoodie-tile" href="https://www.ebay.com/itm/358571935858" target="_blank" rel="noopener noreferrer">
-          <img src="images/image6.jpg" alt="Navy Frozen Champion x Buffalo Hoodie" />
+          <img src="images/image6.jpg" alt="Shop the navy Champion x Buffalo text hoodie on eBay" />
         </a>
 
         <a class="hoodie-tile" href="https://www.ebay.com/itm/358571892024" target="_blank" rel="noopener noreferrer">
-          <img src="images/image7.jpg" alt="Blue Frozen Buffalo Hoodie" />
+          <img src="images/image7.jpg" alt="Shop the royal blue Icy Buffalo graphic hoodie on eBay" />
         </a>
 
       </div>
@@ -284,7 +292,7 @@
     <!-- IMAGE 8: BIGGER CENTERED CAMO HAT WITH TEXT -->
     <section class="featured-hat-section">
       <a href="https://www.ebay.com/itm/358580955240" target="_blank" rel="noopener noreferrer">
-        <img src="images/image8.jpg" alt="Camo No Charge Logo Hat" />
+        <img src="images/image8.jpg" alt="Shop the camo fan-inspired hat with multiple variants on eBay" />
         <div class="variant-text">Made to order • Multiple variants available • Secure checkout through eBay</div>
       </a>
     </section>
